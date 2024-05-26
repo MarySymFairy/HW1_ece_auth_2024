@@ -1,0 +1,413 @@
+$date
+	Sun Jan 21 18:10:38 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module calc_tb $end
+$var wire 16 ! led [15:0] $end
+$var reg 1 " btnc $end
+$var reg 1 # btnd $end
+$var reg 1 $ btnl $end
+$var reg 1 % btnr $end
+$var reg 1 & btnu $end
+$var reg 1 ' clk $end
+$var reg 16 ( sw [15:0] $end
+$scope module TB $end
+$var wire 4 ) alu_op [3:0] $end
+$var wire 32 * alu_op1 [31:0] $end
+$var wire 32 + alu_op2 [31:0] $end
+$var wire 32 , alu_result [31:0] $end
+$var wire 1 - btnc $end
+$var wire 1 . btnd $end
+$var wire 1 / btnl $end
+$var wire 1 0 btnr $end
+$var wire 1 1 btnu $end
+$var wire 1 2 clk $end
+$var wire 16 3 led [15:0] $end
+$var wire 16 4 sw [15:0] $end
+$var reg 16 5 accumulator [15:0] $end
+$scope module calc_aluop $end
+$var wire 4 6 alu_op [3:0] $end
+$var wire 1 - btnc $end
+$var wire 1 / btnl $end
+$var wire 1 0 btnr $end
+$var wire 1 7 r1 $end
+$var wire 1 8 r2 $end
+$var wire 1 9 r3 $end
+$var wire 1 : r4 $end
+$var wire 1 ; x1 $end
+$var wire 1 < x2 $end
+$var wire 1 = x3 $end
+$var wire 1 > x4 $end
+$var wire 1 ? y1 $end
+$var wire 1 @ y2 $end
+$var wire 1 A y3 $end
+$var wire 1 B y4 $end
+$var wire 1 C z1 $end
+$var wire 1 D z2 $end
+$var wire 1 E z3 $end
+$var wire 1 F z4 $end
+$upscope $end
+$scope module calc_alu $end
+$var wire 4 G alu_op [3:0] $end
+$var wire 32 H op1 [31:0] $end
+$var wire 32 I op2 [31:0] $end
+$var reg 32 J result [31:0] $end
+$var reg 1 K zero $end
+$upscope $end
+$scope begin ACCUMULATOR $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1K
+b0 J
+bx I
+b0 H
+bx G
+xF
+xE
+xD
+xC
+xB
+xA
+x@
+x?
+x>
+x=
+x<
+x;
+x:
+x9
+x8
+x7
+bx 6
+b0 5
+bx 4
+b0 3
+12
+11
+x0
+x/
+1.
+x-
+b0 ,
+bx +
+b0 *
+bx )
+bx (
+1'
+1&
+x%
+x$
+1#
+x"
+b0 !
+$end
+#10000
+0'
+02
+#20000
+0&
+01
+1'
+12
+#30000
+0'
+02
+#40000
+0K
+b1001000110100 J
+b1001000110100 ,
+09
+1:
+0B
+1F
+0;
+1>
+07
+0A
+0C
+18
+0<
+1=
+1@
+0?
+0D
+1E
+b1 )
+b1 6
+b1 G
+b1001000110100 (
+b1001000110100 4
+b1001000110100 +
+b1001000110100 I
+1%
+10
+1"
+1-
+0$
+0/
+1'
+12
+#50000
+0'
+02
+#60000
+b1001000110100 5
+b1001000110100 *
+b1001000110100 H
+b1001000110100 !
+b1001000110100 3
+0K
+b0 )
+b0 6
+b0 G
+0F
+19
+1:
+b1000110000 J
+b1000110000 ,
+1;
+0>
+0E
+17
+08
+b111111110000 (
+b111111110000 4
+b111111110000 +
+b111111110000 I
+0%
+00
+1'
+12
+#70000
+0'
+02
+#80000
+b1000110000 5
+b1000110000 *
+b1000110000 H
+b1000110000 !
+b1000110000 3
+b10 )
+b10 6
+b10 G
+1B
+b11010001111111 J
+b11010001111111 ,
+0=
+1A
+1C
+18
+09
+b11001001001111 (
+b11001001001111 4
+b11001001001111 +
+b11001001001111 I
+0"
+0-
+1'
+12
+#90000
+0'
+02
+#100000
+b11010001111111 5
+b11010001111111 *
+b11010001111111 H
+b11010001111111 !
+b11010001111111 3
+b110 )
+b110 6
+b110 G
+1F
+0:
+b11101001110 J
+b11101001110 ,
+0;
+1E
+07
+08
+b10110100110001 (
+b10110100110001 4
+b10110100110001 +
+b10110100110001 I
+1%
+10
+1'
+12
+#110000
+0'
+02
+#120000
+b11101001110 5
+b11101001110 *
+b11101001110 H
+b11101001110 !
+b11101001110 3
+b1101 )
+b1101 6
+b1101 G
+1<
+1:
+0B
+b11111111111111111111100010110001 J
+b11111111111111111111100010110001 ,
+1;
+17
+18
+1=
+0@
+b1111111111111111 (
+b1111111111111111 4
+b11111111111111111111111111111111 +
+b11111111111111111111111111111111 I
+0%
+00
+1$
+1/
+1'
+12
+#130000
+0'
+02
+#140000
+b1111100010110001 5
+b11111111111111111111100010110001 *
+b11111111111111111111100010110001 H
+b1111100010110001 !
+b1111100010110001 3
+0K
+0<
+b111 )
+b111 6
+b111 G
+0:
+b1 J
+b1 ,
+0;
+1>
+1?
+1D
+0E
+07
+08
+b111001101000110 (
+b111001101000110 4
+b111001101000110 +
+b111001101000110 I
+1%
+10
+1'
+12
+#150000
+0'
+02
+#160000
+b1 5
+b1 *
+b1 H
+b1 !
+b1 3
+1:
+0K
+b10000 J
+b10000 ,
+1<
+19
+b1001 )
+b1001 6
+b1001 G
+1;
+0>
+0?
+0D
+1E
+17
+0=
+0A
+0C
+b100 (
+b100 4
+b100 +
+b100 I
+0%
+00
+1"
+1-
+1'
+12
+#170000
+0'
+02
+#180000
+b10000 5
+b10000 *
+b10000 H
+b10000 !
+b10000 3
+0K
+b1 J
+b1 ,
+0<
+b1010 )
+b1010 6
+b1010 G
+09
+0;
+1?
+1D
+0E
+07
+18
+1%
+10
+1'
+12
+#190000
+0'
+02
+#200000
+b1 5
+b1 *
+b1 H
+b1 !
+b1 3
+1>
+b111 )
+b111 6
+b111 G
+0:
+1K
+b0 J
+b0 ,
+1=
+1A
+1C
+08
+b1111111111111111 (
+b1111111111111111 4
+b11111111111111111111111111111111 +
+b11111111111111111111111111111111 I
+0"
+0-
+1'
+12
+#210000
+0'
+02
+#220000
+b0 5
+b0 *
+b0 H
+b0 !
+b0 3
+1'
+12
